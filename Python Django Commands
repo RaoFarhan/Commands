@@ -1,1 +1,220 @@
 
+got to project folder and use this: code . to open vscode
+#Docker
+docker build .(running command to build our docker image)
+docker-compose build
+docker-compose up
+refresh database
+docker volume ls
+docker volume rm appname running
+docker-compose run --rm app sh -c ""
+docker-cmpose run --rm app sh -c "django-admin startproject app ."
+#Virtual evnviornment
+Install virtual env:pip install venv,
+python -m virtualenv venv, 
+venv\Scripts\activate or deactivate
+#GIT
+Create Git Repository. git inint
+git clone <url>
+touch hello.html(Create new file)
+To show hidden Files: ls -a
+Configure Youre Name: git config --global user.name "Farhan Yaqoob"
+git add <file name>
+git commit -m "message"
+git commit -am "message"
+git status(to check the status)
+git push
+git branch
+to create new branch: git checkout -b <new branch name>
+To move switch a branch: git checkout <master>
+To merge branches: git merge <style>
+####Django##
+Django-admin startproject projectname
+python manage.py <runserver>
+python manage.py startapp <appname>
+
+#GitHub
+git add .
+git commit -am "added actions"
+git push origin
+git pull
+git log <give the track of all of the commits>
+git reset --hard <commit>
+git reset --hard origin/master
+drag django project file in the visualstudio code
+
+#In django Project  useful packages
+Packages need we should import:Python by Microsoft,Django by Baptiste Darthenay
+Django by Roberth Solis, Django Template by bibhasdn< Material Icon Theme by Philipp Kief
+
+#Django
+pip install django
+django-admin --version
+to check django: django-admin, django-help
+to create project:django-admin startproject projectname(it will create django project file)
+starting django development server: entering in the project> python manage.py runserver, python manage.py startapp appname
+python manage.py createsuperuser
+python manage.py --help
+python manage.py migrate
+django use sqlite3 database by default
+
+package for the database postgress: pip install psycopg2
+#SuperUser
+python manage.py createsuperuser
+python manage.py startapp appname
+python manage.py collectstatic
+for image: python -m pip install pillow
+
+WhiteNoise
+GUNICORN
+pip install uvicorn
+uvicorn automax.asgi:application
+pip freeze
+heroku login
+git intit
+heroku git:remote -a appname on herku
+git add .
+git commit -am "initial"
+git push heroku master
+
+#Git & GitHub
+create folder:mkdir
+Create a file: touch name.text
+delete or remove file: rm -rf file name
+git init
+check the files: ls
+check the hidden files: ls -a
+check the untracked files: git status
+git add . or git add names.text
+git commit -m "names.tex file added"
+To edit the text file: vi names.text, esc :x
+to view the text file data: cat names.text
+git pull origin
+
+#Heroku
+Heroku login
+git init
+heroku git:remote -a practice-django-project 
+Enviroment Variable:
+use to hide or decoupled the sensitive information in seprate file the secrete piece of data from our source code 
+pip install django-environ
+
+create new folder: mkdir foldername
+for comments:ctrl+K+C
+vi: to 
+#Docker
+clear any container: docker-compose down
+rebuild container whenever include new package: dokcer-compose build
+Run development server:docker compose up
+create new app "core": docker-compose run --rm app sh -c "python manage.py startapp core"
+start django project from docker:docker-compose run --rm app sh -c "django-admin startproject app ."
+Run test: docker-compose run --rm app sh -c "python manage.py test"
+create superuser: docker-compose run --rm sh c "python manage.py createsuperuser"
+docker-compose runs a docker compose command
+run will start a specific container defined in config
+--rm removes the container
+app is the name of the service
+sh -c passes in a shell command
+command to run inside the container
+
+#Flake
+pip install flake8-django
+to test the flake8 linting: docker-compose-run --rm app sh -c "flake8"
+
+#Github Commands
+git add . , git commit -am "Added github actions", git push origin
+
+SSH Key
+git config --global user.name "Your Name"
+git config --global user.email “you@example.com”
+git clone (PASTE HERE YOUR ADDRESS GIT)
+ssh-keygen
+files created copy the public one and paste git hub
+
+make docker token with app name 
+than in github make two git sercret key in app user and password of docker
+
+Deployment: 
+AWS
+Run Server(.ssh): ec2-user@54.84.195.193
+ssh ec2-user@54.84.195.193
+After every change build app :docker-compose -f docker-compose-deploy.yml build
+docker-compose -f docker-compose-deploy.yml up
+docker-compose -f docker-compose-deploy.yml up --no-deps -d app
+
+AWS:
+
+for configuring to ssh :eval $(ssh-agent)
+ssh-add aws_id_rsa 
+To install git over server: sudo yum install git -y
+To install Docker Over server: sudo amazon-linux-extras install docker -y, 
+sudo systemctl enable docker.service
+sudo systemctl start docker.service
+Permission to run docker container: sudo usermod -aG docker ec2-user
+
+
+
+
+
+
+DataBase: 
+Refreshing database
+docker down before refershing
+docker volume ls
+docker volume rm(app name)
+Always rebuild docker container after adding any changes in requirments to make sure it installed last package
+Make new migrations: python manage.py makemigrations
+Python migrations: python manage.py migrate
+*********************************************************
+Server Commands: GET(<--Request from server),POST(post to server->),DELETE(->delete something from server),PUT(->Update data to server)
+URL(-->send url request to server), Response(<--The return result from server), Render(that response is render to webbrowser)
+ORM help to intract with sql data base by using python code(object relational mapper)
+Django  features is: MVC design pattern(Model(data of application), View(how the data is display to the user and info collected from user), Controller(Middle man of view and model, controlling the login in middle))
+Middleware: CSRF protection, Cashing, authentication
+Ways of using CSS:Inserting the code inside the style tag on the <style></style>, Referencing an external CSS file<link href="style.css" rel="stylesheet" />, 
+Inline styling using attribute style in tag<p style="color: blue; margin: 10px"
+Javascript <script> can you same way as css
+#Strings:
+python has zero based indexing
+x = Farhan
+y = Yaqoob
+age = 28
+F string: f"{x} {y}"
+format string: c = "{} {} is {} years old".fromat(x, y, age)--> Farhan Yaqoob is 28 years old
+escape character in string: include this with string \'
+Lists:[], muteable(lists are editable), negative based indexing list[-3]
+insert,append,extends,remove,pop(2),sort(reverse=True)
+list commprihension: list = [f for f in list1 if f=!"apple"]
+Tupples():same like list but Imutable(unchangeable, fix order, allow dublicate) have same feature as list except updating 
+Sets{}: (unchangable but can remove and add item and no defined order, unindexed, unique value, no dublicate)
+add, remmove,pop(will remove random object from set)
+Dictionries{"key":"value"}:Store data in key value pair,order changeable, dont allow dublicate
+dict.values(),dict.keyes(), dict.pop("value"), dict.pop(last inserted item), dict.copy
+
+*args and **kwargs are special keyword which allows function to take variable length argument.
+*args passes variable number of non-keyworded arguments and on which operation of the tuple can be performed.
+**kwargs passes variable number of keyword arguments dictionary to function on which operation of a dictionary can be performed
+*args and **kwargs make the function flexible.
+#BootStrap
+To add Bootstarp
+{% load static %}
+<!--Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+Signals:
+signals are the way in django to notify events that happen in database instance or django app
+by using decorator function reciver: like post_save,post_delete, post migration by using reciver decorator
+pip install django-crispy-forms
+pip install django-localflavor
+
+Django Messages:is a framework within django basically allow us to display unique messages based upon certain actions within our application
+
+Function based view: if a view dont have a lot of functionalities than use it 
+Class based view:if a view have a lot get post, delete, hhtpresponse than use class base view
+divide the code in disinct pieces 
+to access the static assets we use the static template tag{% static '' %}
+AwS 
+account Id:645557628091
+Alias: practicedeep
+User:farhan
+password:Abcd1234
+ApiView vs ViewSets 
