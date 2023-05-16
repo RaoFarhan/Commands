@@ -13,21 +13,41 @@ docker-cmpose run --rm app sh -c "django-admin startproject app ."
 Install virtual env:pip install venv,
 python -m virtualenv venv, 
 venv\Scripts\activate or deactivate
+
 #GIT
-Create Git Repository. git inint
+Create new empty Git Repository. git init
 git clone <url>
 touch hello.html(Create new file)
 To show hidden Files: ls -a
-Configure Youre Name: git config --global user.name "Farhan Yaqoob"
+Configure Your Name: git config --global user.name "Farhan Yaqoob"
+Configure Your Email: git config --global email "email@...."
+Create a file with cmd: vim readme.md
+Look inside of the file: cat filename
 git add <file name>
-git commit -m "message"
-git commit -am "message"
-git status(to check the status)
+To unstaged a file: git reset HEAD file name, git restore --staged file name
+Show a history of changes: git log
+Log in detail: git log --patch 
+stage changes for commit: git add 
+stage changes to all the file : git add . 
+Commit staged changes: git commit -m "message"
+To commit whol project: git commit -am "message"
+Creating a emplty file in the folderto make it trackable: touch temp/.gitkeep
+To delete a file: rm newfile.txt
+To delte a folder temp: rm -rf -- temp
+get out of the vim: :x (exit with saving)  :q! (exit witout saving)
+Tells you the current status of the git Respository: git status
+If you dont want to commit specific files list them in the .gitignore file
 git push
 git branch
 to create new branch: git checkout -b <new branch name>
 To move switch a branch: git checkout <master>
-To merge branches: git merge <style>
+To forcefully delete a branch: git branch -D branchname
+To delete in simple way: git branch -d branchname
+To merge branches: git merge <branchname>
+To rebase the branch: git rebase <master>
+Restore to original content: git merge --abort
+
+
 ####Django##
 Django-admin startproject projectname
 python manage.py <runserver>
