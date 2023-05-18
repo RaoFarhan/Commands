@@ -33,7 +33,7 @@ Commit staged changes: git commit -m "message"
 To commit whol project: git commit -am "message"
 Creating a emplty file in the folderto make it trackable: touch temp/.gitkeep
 To delete a file: rm newfile.txt
-To delte a folder temp: rm -rf -- temp
+To delte a folder temp: rm -rf -- filename
 get out of the vim: :x (exit with saving)  :q! (exit witout saving)
 Tells you the current status of the git Respository: git status
 If you dont want to commit specific files list them in the .gitignore file
@@ -46,7 +46,11 @@ To delete in simple way: git branch -d branchname
 To merge branches: git merge <branchname>
 To rebase the branch: git rebase <master>
 Restore to original content: git merge --abort
-
+#####GitLab#####
+git remote add origin https://gitlab.com/RaoFarhan/my-cool-website.git
+Pull the updated version: git pull origin master
+Hard set merging : git reset --hard origin/master
+Push new branch to repo: git push origin <newbranchname>
 
 ####Django##
 Django-admin startproject projectname
