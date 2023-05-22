@@ -234,7 +234,7 @@ Django Messages:is a framework within django basically allow us to display uniqu
 
 Function based view: if a view dont have a lot of functionalities than use it 
 Class based view:if a view have a lot get post, delete, hhtpresponse than use class base view
-divide the code in disinct pieces 
+divide the code in disinct pieces
 to access the static assets we use the static template tag{% static '' %}
 AwS 
 account Id:645557628091
