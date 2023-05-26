@@ -52,6 +52,13 @@ Pull the updated version: git pull origin master
 Hard set merging : git reset --hard origin/master
 Push new branch to repo: git push origin <newbranchname>
 
+######################React js##########
+To create a react project: npm create vite@4.1.0
+To store all third party libraries in the project: npm i 
+To run server: npm run dev
+npm i @bootstrap5.2.3
+
+
 ####Django##
 Django-admin startproject projectname
 python manage.py <runserver>
