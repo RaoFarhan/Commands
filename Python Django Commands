@@ -53,6 +53,7 @@ Hard set merging : git reset --hard origin/master
 Push new branch to repo: git push origin <newbranchname>
 
 ######################React js##########
+use extention: ES7 + React Redux ... =>>> write rafce
 To create a react project: npm create vite@4.1.0
 To store all third party libraries in the project: npm i 
 To run server: npm run dev
