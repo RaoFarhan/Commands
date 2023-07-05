@@ -53,11 +53,21 @@ Hard set merging : git reset --hard origin/master
 Push new branch to repo: git push origin <newbranchname>
 
 ######################React js##########
-use extention: ES7 + React Redux ... =>>> write rafce
+use extention: ES7 + React Redux ... =>>> write rafce(function base component), rce(classbase component), rconst(to make constructor)
 To create a react project: npm create vite@4.1.0
 To store all third party libraries in the project: npm i 
 To run server: npm run dev
 npm i @bootstrap5.2.3
+--------React----
+Create React App
+npx create-react-app my-app
+cd my-app
+npm start
+npx and npm approach
+npx create-react-app <project_name>
+npm package runner
+npm install create-react-app -g
+create-react-app<project_name>
 
 
 ####Django##
